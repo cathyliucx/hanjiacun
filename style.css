@@ -100,3 +100,28 @@
 .elder-prose .seated-portrait { width:min(100%,260px); margin-inline:auto; }
 .elder-prose h4 { margin:22px 0 8px; font:600 19px/1.6 var(--serif); }
 .elder-prose .elder-note { border-left:2px solid #af9b7f; padding-left:12px; color:#5c594d; font-size:13px; line-height:1.8; }
+
+.hero-book {
+  position:absolute;
+  right:8vw;
+  bottom:102px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:12px 20px 12px 13px;
+  border:1px solid #e1d2b9;
+  border-radius:4px;
+  background:#fcf4e5;
+  color:#412e25;
+  box-shadow:0 5px 18px #18202233;
+  font:600 20px/1.5 var(--serif);
+}
+.hero-book img { width:54px; height:auto; }
+.hero-book small { display:block; color:var(--red); font:13px/1.7 var(--sans); }
+.hero-book:hover small { text-decoration:underline; }
+.article-book { float:right; width:clamp(78px,16vw,140px); height:auto; margin:0 0 15px 20px; }
+.article-page h2 { clear:both; }
+@media(max-width:700px){
+  .hero-book { left:30px; right:auto; bottom:85px; padding:7px 14px 7px 8px; gap:8px; font-size:16px; }
+  .hero-book img { width:37px; }
+}
