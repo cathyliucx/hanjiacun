@@ -85,21 +85,18 @@
   .header .brand, .header nav { gap: 10px; }
 }
 
-.elder-story { border-bottom:1px solid #c8c4b8; }
-.elder-story summary { display:flex; align-items:center; gap:14px; padding:12px 4px; cursor:pointer; list-style:none; }
-.elder-story summary::-webkit-details-marker { display:none; }
-.elder-story summary img { width:56px; height:62px; object-fit:cover; object-position:50% 25%; border-radius:3px; }
-.elder-story summary strong { display:block; font:600 21px/1.45 var(--serif); }
-.elder-story summary small { color:#59594e; font-size:14px; }
-.elder-story summary::after { content:""; width:8px; height:8px; flex:none; margin:0 9px 4px auto; border:solid var(--red); border-width:0 1.5px 1.5px 0; transform:rotate(45deg); }
-.elder-story[open] summary::after { transform:rotate(225deg); }
-.elder-story summary:hover strong { color:var(--red); }
-.elder-story summary:focus-visible { outline:2px solid var(--red); outline-offset:2px; }
-.elder-prose { padding:8px 0 24px; font-size:16px; }
-.elder-prose figure { margin-bottom:18px; }
-.elder-prose .seated-portrait { width:min(100%,260px); margin-inline:auto; }
-.elder-prose h4 { margin:22px 0 8px; font:600 19px/1.6 var(--serif); }
-.elder-prose .elder-note { border-left:2px solid #af9b7f; padding-left:12px; color:#5c594d; font-size:13px; line-height:1.8; }
+.elder-list { margin-top:22px; }
+.elder-list h3 { margin:0 0 6px; font:600 20px/1.6 var(--serif); }
+.elder-link { display:flex; align-items:center; gap:14px; padding:12px 4px; border-bottom:1px solid var(--line); }
+.elder-link img { width:52px; height:60px; object-fit:cover; object-position:50% 25%; border-radius:3px; }
+.elder-link strong { display:block; font:600 20px/1.5 var(--serif); }
+.elder-link small { color:#59594e; font-size:14px; }
+.elder-link::after { content:"→"; margin-left:auto; color:var(--red); }
+.elder-link:hover strong { color:var(--red); }
+.elder-page { max-width:800px; }
+.elder-page figure img { display:block; width:auto; height:auto; max-width:100%; }
+.elder-page .elder-note { border-left:2px solid #af9b7f; padding-left:12px; color:#5c594d; font-size:14px; }
+.elder-page .button { margin-top:20px; }
 
 .hero-book {
   position:absolute;
