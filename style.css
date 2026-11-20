@@ -85,8 +85,6 @@
   .header .brand, .header nav { gap: 10px; }
 }
 
-.elder-list { margin-top:22px; }
-.elder-list h3 { margin:0 0 6px; font:600 20px/1.6 var(--serif); }
 .elder-link { display:flex; align-items:center; gap:14px; padding:12px 4px; border-bottom:1px solid var(--line); }
 .elder-link img { width:52px; height:60px; object-fit:cover; object-position:50% 25%; border-radius:3px; }
 .elder-link strong { display:block; font:600 20px/1.5 var(--serif); }
