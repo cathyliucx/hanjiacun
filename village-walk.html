@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eeeae0"><title>囤庄二十四院 · 韩家村三维漫游</title>
+  <link rel="icon" href="assets/logo.svg"><link rel="stylesheet" href="assets/walk/walk.css?v=family-meal">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><img src="assets/logo.svg" width="40" height="40" alt=""><span>韩家村<small>HANJIA VILLAGE</small></span></a>
+  <span class="series">村史漫游</span>
+  <button id="sources" type="button">复原依据</button>
+  <a class="home" href="index.html#walk-entry">返回首页</a>
+</header>
+<main id="world" data-mode="overview">
+  <canvas id="view" tabindex="0" aria-label="韩家旧村三维场景。在鸟瞰中拖动旋转，进入步行后用方向键或 W A S D 移动，拖动环看；Q、E 向左、右转，R、F 抬头、低头。靠近房门可按空格或点击开门按钮。"></canvas>
+  <div class="identity"><p>陕西旬邑 <i></i> 古村复原</p><h1>囤庄二十四院</h1><span id="place">十九世纪 · 韩家旧村</span></div>
+  <div class="compass" aria-hidden="true"><b>北</b><span id="needle">↑</span></div>
+  <button id="music-toggle" type="button" aria-pressed="false" aria-label="背景音乐：院中慢调" title="背景音乐：院中慢调"><span aria-hidden="true">♫</span> <span id="music-state">音乐关</span></button>
+  <audio id="walk-music" src="assets/walk/courtyard-theme.wav" preload="none" loop></audio>
+  <div id="loading" role="status">正在铺开旧村地形…</div>
+  <div class="controls">
+    <div class="destinations"><label for="location">村中地点</label>
+      <select id="location"><option value="gate">老门上</option><option value="neighbors">村头树下</option><option value="court">四合院</option><option value="meal">正房炕桌</option><option value="cave">胡同窑</option><option value="school">窑校旧址</option><option value="classroom">窑洞课堂</option><option value="field">村旁田垄</option></select>
+      <button id="visit">到此步行</button>
+    </div>
+    <div class="switcher" aria-label="观察方式"><button id="overview" aria-pressed="true">全村鸟瞰</button><button id="walk" aria-pressed="false">入村步行</button></div>
+    <p id="hint">拖动环看 · 滚轮或双指缩放</p>
+  </div>
+  <button type="button" id="door-action" hidden title="点击或按空格开关房门">开门</button>
+  <div class="turn-pad" role="group" aria-label="步行转向">
+    <button type="button" data-move="q"><span aria-hidden="true">↶</span> 左转</button>
+    <button type="button" data-move="e"><span aria-hidden="true">↷</span> 右转</button>
+  </div>
+  <div class="pad" aria-label="步行方向"><button data-move="w" aria-label="前进">▲</button><button data-move="a" aria-label="左移">◀</button><button data-move="s" aria-label="后退">▼</button><button data-move="d" aria-label="右移">▶</button></div>
+  <noscript><p class="no-js">三维漫游需要开启 JavaScript。<a href="village-history.html">阅读村史精选</a></p></noscript>
+</main>
+<dialog id="notes"><button id="close" aria-label="关闭复原依据">×</button><p class="kicker">《韩家村史》 · 第五章</p><h2>这座旧村从何而来</h2>
+  <dl><dt>一街，二十四院 <small>第 142、147 页</small></dt><dd>依书中表 1、图 5，将二十四院分列在一条街道两侧，每侧十二院，西端为老门上。作者说明，早期院落与住户图结合了村中传说和推断。</dd>
+  <dt>老门以西的窑院 <small>第 151 页</small></dt><dd>书中记述，1854 至 1880 年间，住户向老门以西扩展，沿车路掘窑。场景在西侧选绘一段胡同，以土崖、拱券和窑室表现这种住居。</dd>
+  <dt>地势与尺度 <small>第 145–146 页</small></dt><dd>韩家村地势东北高、西南低。模型保留这一走势。院落尺度、屋面做法、胡同深度、树木和田块均为示意补绘；书中的布局图用于说明空间关系。页码均为书内页码。</dd>
+  <dt>正房与厦屋</dt><dd>村史收录的房产记录中有“厦房”。漫游中，正房居院后，两侧厦屋的单坡屋顶向院内落水；正房设土炕和矮桌，一侧厦屋设锅灶。家具摆放与家人围桌吃饭的动作按北方院落生活作示意复原。</dd>
+  <dt>窑洞课堂 <small>第 169–171 页</small></dt><dd>《韩家村史》收有窑洞小学旧址影像，也记下学生在院里早读的情景。第 169 页图 1 可见三孔相连的窑面、转角处另一孔窑面、门侧小窗及院门。漫游据照片重绘这些外观。书中未给出测绘尺寸或室内照片，院落尺度、朝向、黑板、长条凳与人物活动为示意。<figure><img src="assets/photos/cave-school.webp" width="520" style="max-width:100%;height:auto" alt="村史所载韩家小学旧址影像"><figcaption>《韩家村史》书内第 169 页，图 1</figcaption></figure></dd>
+  <dt>村里的日常</dt><dd>田间锄地、院中择菜、筛粮、洒扫、提篮出门、街坊串门和村头妇女围坐交谈是对旧村日常生活的情景演绎。四合院里有鸡啄食，老门旁有狗沿街走动，田边有黄牛吃草。</dd></dl>
+</dialog>
+<script type="module" src="assets/walk/walk.js?v=school-photo"></script>
+<script>if(location.protocol==='file:')document.querySelector('#loading').textContent='请通过本地预览服务器或 GitHub Pages 打开三维漫游。';</script>
+</body></html>

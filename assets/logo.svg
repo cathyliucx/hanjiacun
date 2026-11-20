@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" role="img" aria-labelledby="title">
+  <title id="title">韩家村 · 双檐书印</title>
+  <g fill="#923B30" fill-rule="evenodd">
+    <!-- 后院：方窗的上沿与椽柱共用一笔。 -->
+    <path d="M12 48 Q32 40 58 21 L81 34 L73 39 L58 31 L41 41 V67 H58 V105 H19 V67 H33 V45 L12 55 Z M27 75 V97 H50 V75 Z"/>
+    <!-- 前院：屋脊落为右墙，文形的撇捺贯通院口。 -->
+    <path d="M66 52 Q82 45 99 33 L131 50 V121 L123 124 V104 L107 90 Q95 110 72 123 L68 122 Q89 103 101 84 L84 66 L94 67 L106 79 L113 68 L122 65 Q118 76 112 85 L123 95 V55 L99 43 L66 60 Z"/>
+  </g>
+</svg>
